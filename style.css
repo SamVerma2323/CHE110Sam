@@ -1,0 +1,234 @@
+/* CSS STYLESHEET FOR INDEX.HTML & UNIVERSAL STYLING */
+
+/************************************************/
+/************* UNIVERSAL ELEMENTS ***************/
+/************************************************/
+
+/* FONT PROPERTIES AND BACKGROUND */
+body,
+html {
+  height: 100%;
+  font-size: 20px; /* Change the font size*/
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5em; /* Change the line height size*/
+  margin: 0em;
+  color: white;
+  background-color:rgb(124, 120, 120);
+  box-sizing: border-box;
+}
+
+h1 {
+  letter-spacing: 5px;
+  font-size: 50px;
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
+  color: white;
+}
+
+h2 {
+  letter-spacing: 3px;
+  font-size: 30px;
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
+  line-height: 1.3em;
+}
+
+p {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* COLOR OF LINK WHEN HOVERING OVER IT */
+p a {
+  color: #43d6b9ff;
+  text-decoration: none;
+}
+
+.text-section {
+  padding: 0;
+  margin: 0;
+  background-color: #00008bff;
+  color: white;
+}
+
+/************************************************/
+/*************** CSS FOR NAV BAR ****************/
+/************************************************/
+
+/* BORDER STYLE */
+
+ul.nav-bar {
+  /* Styling for the <ul class="nav-bar"> element */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #00008bff;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px
+}
+
+li.nav {
+  float: right;
+  font-size: 15px;
+  border-width: 1px
+}
+
+#nav-home {
+  border-style: none solid none solid;
+  border-color: white;
+}
+
+#nav-resources {
+  border-style: none solid none none;
+  border-color: white;
+}
+
+/* FONT COLOR AND DECORATION */
+
+li.nav a {
+  /* Styling for the <a> elements in <li class="nav"> */
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+
+}
+
+/* BACKGROUND COLOR WHEN HOVERING */
+
+li.nav a:hover {
+  /* Styling for the <a> elements when the mouse is hovering in <li class="nav"> */
+  background-color: #00008bff;
+  color: white;
+}
+
+
+/************************************************/
+/*********** CSS FOR FLEXBOX HEADING ************/
+/************************************************/
+
+/* FLEXBOX FOR TITLE AND INTRO TEXT  */
+.flex-container {
+  display: flex; /* Set the flexbox display */
+  flex-direction: row; /* Configure the flex items to row */
+  flex-wrap: nowrap; /* Don’t wrap the flex items */
+  justify-content: center; /* Justify the flex items to the center */
+  align-items: center; /* Align the flex items to the center */
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+
+  /* DESIGN PROPERTIES */
+  background-color: #00008bff;
+  padding: 5px;
+
+  /* POSITIONING PROPERTIES */
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  top: 30%; 
+}
+
+/* CSS PROPERTIES FOR HEADING */
+.heading-home {
+  padding: 3px 0px;
+  margin: 3% 0% 3% 3%;
+  color: white;
+  font-size: 50px;
+  letter-spacing: 10px;
+  line-height: 60px;
+  text-align: center;
+  background-color: #00008bff;
+  border-style: double;
+  border-color: white;
+}
+
+/* CSS PROPERTIES FOR INTRO TEXT */
+.intro-text {
+  background-color: #00008bff; /* Add your own background color */
+  padding: 4%;
+  margin: 3%;
+  color: white; /* Add the color of your font */
+  font-size: 20px; /* Add your font size*/
+  letter-spacing: 1px; /* Adds space between letters */
+  line-height: 1.4em; /* Adds space between lines */
+  text-align: center;
+  border-style: double;
+  border-color: white;
+  width: 400px
+}
+
+/************************************************/
+/*************** PARALLAX SCROLL ****************/
+/************************************************/
+
+/*-----------TEXT SECTIONS-----------*/
+.text-section {
+  background-color: #00008bff;
+  padding: 20px 45px;
+  margin: 4px;
+  text-align: center;
+  color: white;
+}
+
+/*---------IMAGE STYLING + PARALLAX PROPERTY---------*/
+.main-message,
+.image-one,
+.image-two,
+.image-three,
+.image-four,
+.image-five {
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #00008bff;
+  background-size: cover;
+  min-height: 100%;
+  background-attachment: fixed;
+}
+
+/* IMAGES */
+.main-message {
+  background-image: url("https://wallpaperaccess.com/full/2111568.jpg");
+}
+
+/* IMAGE 1 */
+.image-one {
+  background-image: url("https://wallpapercave.com/dwp1x/wp9861671.jpg");
+}
+
+/* IMAGE 2 */
+.image-two {
+  background-image: url("https://www.shutterstock.com/shutterstock/photos/2262866575/display_1500/stock-vector-water-management-system-for-liquid-h-o-resources-control-outline-diagram-reuse-flushed-drinking-2262866575.jpg");
+}
+
+
+/* IMAGE 3 */
+.image-three {
+  background-image: url("https://images.pexels.com/photos/3234841/pexels-photo-3234841.jpeg?auto=compress&cs=tinysrgb&w=600");
+}
+/* imagefour */
+.image-four {
+  background-image: url("https://images.unsplash.com/photo-1632507710285-9b7186e79686?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNsaW1hdGUlMjBjaGFuZ2V8ZW58MHx8MHx8fDA%3D");
+}
+/* image five */
+.image-five {
+  background-image: url("https://media.istockphoto.com/id/948551412/photo/two-people-human-hands-holding-saving-growing-big-tree-on-soil-eco-bio-globe-in-clean-csr-esg.jpg?s=612x612&w=0&k=20&c=ZY0wjjNSKPKLG9LP25X5891nv6VuL1kryXG4oMP-k2o=");
+}
+
+
+/******************************************************/
+/***** CHANGE INDEX.HTML CSS BASED ON SCREEN SIZE *****/
+/******************************************************/
+
+@media screen and (max-width: 768px) {
+  .flex-container{
+    flex-wrap: wrap;
+    top: 20%;
+  }
+}
