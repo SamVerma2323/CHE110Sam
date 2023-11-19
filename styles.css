@@ -43,6 +43,22 @@ piechartimage */
   margin-top: 50px;
    width: 100px; /* set the desired width */
   /* height: auto; maintain the aspect ratio */
+
+
+
+/* Styles for larger screens */
+body {
+    font-size: 16px;
+}
+
+/* Media query for smaller screens (mobile) */
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+
  
 
 
